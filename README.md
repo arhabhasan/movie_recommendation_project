@@ -1,7 +1,3 @@
-Your README file is well-structured and clear. Here are some minor corrections and suggestions for improvement:
-
----
-
 # CinFind: Your Personalized Movie Recommender
 
 ---
