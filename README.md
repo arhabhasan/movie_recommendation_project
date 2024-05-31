@@ -1,3 +1,7 @@
+Your README file is well-structured and clear. Here are some minor corrections and suggestions for improvement:
+
+---
+
 # CinFind: Your Personalized Movie Recommender
 
 ---
@@ -23,18 +27,18 @@ CinFind aims to develop a movie recommendation tool that offers personalized sug
 ## Research Questions
 1. What factors are more important in movie ratings: critical reviews (Tomatometer scores) or audience preferences?
 2. Can we create personalized movie recommendations based on individual user preferences?
-3. How accurate can predictive modeling be in figuring out movie ratings?
+3. How accurate can predictive modeling be in predicting movie ratings?
 4. What are the potential business outcomes of this project for streaming platforms and movie-aggregation websites?
 
 ---
 
 ## Dataset
 ### Source
-We sourced our dataset from Rotten Tomatoes, a renowned cinema review-aggregation website. Data was fetched using web scraping techniques with BeautifulSoup and the RottenTomatoes Python library.
+We sourced our dataset from Rotten Tomatoes, a renowned cinema review-aggregation website. Data was fetched using web scraping techniques with BeautifulSoup and the `rottentomatoes-python` library.
 
 ### Storage and Processing
-- **Stored:** Using sqlite3 for efficient data retrieval.
-- **Processed:** Essential columns like Title, Tomatometer score, Audience score, Actors, Genre, and Rating were processed to generate results from the ML model.
+- **Storage:** Using SQLite for efficient data retrieval.
+- **Processing:** Essential columns like Title, Tomatometer score, Audience score, Actors, Genre, and Rating were processed to generate results from the ML model.
 
 ---
 
@@ -42,8 +46,8 @@ We sourced our dataset from Rotten Tomatoes, a renowned cinema review-aggregatio
 1. **Web Scraping:** Using BeautifulSoup to collect data.
 2. **Database Storage:** SQLite database for storing the scraped data.
 3. **Data Preprocessing:** Conducting EDA, cleaning data, and converting it into suitable formats using PySpark dataframes.
-4. **Predictive Modelling:** Utilizing K-Means clustering to create predictive models.
-5. **Deployment:** Deploying the application using Streamlit and localtunnel.
+4. **Predictive Modeling:** Utilizing K-Means clustering to create predictive models.
+5. **Deployment:** Deploying the application using Streamlit and Localtunnel.
 
 ### Files Needed to Run the Web App
 - `movies.db`
@@ -58,18 +62,15 @@ We sourced our dataset from Rotten Tomatoes, a renowned cinema review-aggregatio
 ---
 
 ## Conclusions
-1. Utilized web scraping, relational databases, machine learning, data pre-processing, and web application deployment for creating a personalized movie recommender.
+1. Utilized web scraping, relational databases, machine learning, data preprocessing, and web application deployment for creating a personalized movie recommender.
 2. Highlighted critical factors influencing movie ratings, genre trends, and the effectiveness of personalized recommendations.
-3. Identified future opportunities for further research and integration with Pyspark Streaming for real-time data updates.
+3. Identified future opportunities for further research and integration with PySpark Streaming for real-time data updates.
 
 ---
 
 ## Limitations
 1. **Dependency on Rotten Tomatoes:** This project relies heavily on data from Rotten Tomatoes and the `rottentomatoes-python` library. Any changes to the website's structure or restrictions on data access could impact the functionality of our recommendation system.
 2. **Single Data Source:** The current implementation uses only Rotten Tomatoes for movie data. Expanding the data sources to include other movie review sites like IMDb and Metacritic could enhance the recommendation system's accuracy and reliability.
-3. **Limited Features:** Our model currently uses a fixed set of features (e.g., genre, cast, ratings). Incorporating additional data points like user watch history, viewing context (e.g., time of day), and social media trends could improve personalization.
-4. **Static Data:** The dataset is static and not updated in real-time. Implementing a real-time data ingestion pipeline could ensure the recommendations remain current and relevant.
-5. **Scalability:** While SQLite is suitable for small-scale projects, migrating to a more robust database system like PostgreSQL or MongoDB might be necessary for handling larger datasets and more extensive user bases.
 
 ---
 
